@@ -21,7 +21,7 @@ class MakeUmamusumeData extends Seeder
         foreach($json_Files as $index => $object){
             if(!Umamusume::where('umamusume_name',$object->名前)->exists()){
                 $umamusume  = new Umamusume();
-                $umamusume->umamusume_id = int($index);
+                $umamusume->umamusume_id = (int)$index;
                 $umamusume->umamusume_name = $object->名前;
                 $umamusume->turf_aptitude = $object->芝;
                 $umamusume->dirt_aptitude = $object->ダート;
