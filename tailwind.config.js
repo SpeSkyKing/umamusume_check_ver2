@@ -8,11 +8,16 @@ export default {
         './resources/**/*.blade.php',
         './resources/**/*.js',
         './resources/**/*.vue',
+        './resources/**/*.tsx',
     ],
     theme: {
         extend: {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+            },
+            backgroundImage: {
+                'umamusume-back': "url('/public/storage/img/umamusume_back.jpg')",
+                'umamusume-side': "url('/public/storage/img/umamusume_side.jpg')",
             },
         },
     },
